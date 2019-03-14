@@ -98,6 +98,8 @@ cc_library {
     name: "libselinux",
     defaults: ["libselinux_defaults"],
 
+    double_loadable: true,
+
     vendor_available: true,
     vndk: {
         enabled: true,
